@@ -1,0 +1,21 @@
+/* Descendant Selector */
+
+.container p {
+    /* color: red; */
+}
+
+
+/* Child Selector */
+/* ul > li {
+    list-style-type: square;
+} */
+
+/* Adjacent Sibling Selector */
+/* h2 + p {
+    font-weight: bold;
+} */
+
+/* General Sibling Selector */
+h2 ~ p {
+    color: pink;
+}

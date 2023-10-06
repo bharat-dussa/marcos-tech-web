@@ -1,0 +1,53 @@
+ /* Styles for pseudo-classes */
+ 
+         /* :hover example */
+         a:hover {
+            color: red;
+        }
+
+        /* :active example */
+        button:active {
+            background-color: blue;
+        }
+
+        /* :focus example */
+        input:focus {
+            border-color: green;
+        }
+
+        /* :first-child example */
+        li:first-child {
+            font-weight: bold;
+        }
+
+        /* :last-child example */
+        li:last-child {
+            font-style: italic;
+        }
+        li:nth-child(2) {
+            font-style: italic;
+        }
+        /* :nth-child example */
+        li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* :not(selector) example */
+        p:not(.special) {
+            font-size: 16px;
+        }
+
+        /* :nth-of-type example */
+        div:nth-of-type(2n) {
+            background-color: yellow;
+        }
+
+        /* :checked example */
+        .checkbox:checked {
+            background-color: pink;
+        }
+
+        /* :disabled example */
+        input:disabled {
+            opacity: 0.6;
+        }

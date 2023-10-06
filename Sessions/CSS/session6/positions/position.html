@@ -1,0 +1,109 @@
+<!-- 
+
+    By default 
+    position is static 
+        - not able to apply top,bottom,left,right,z-index
+        - Elements renders in order, as they appear in the document flow. This is default.
+
+    relative 
+        - current window 
+        - maintains its gap or jaga
+        - The element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT position
+
+    absolute
+        - relative to closest ancestor/parent
+        - gap not maintained
+        - The element is positioned relative to its first positioned (not static) ancestor element
+
+    fixed
+        - tag is fixed.
+        - The element is positioned relative to the browser window
+
+    sticky
+        - tag is fixed.
+        - The element is positioned based on the user's scroll position
+        - A sticky element toggles between relative and fixed, depending on the scroll position. 
+          It is positioned relative until a given offset position is met in the viewport - 
+          then it "sticks" in place (like position:fixed).
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <link rel="stylesheet" href="./position.css" />
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+      border: 4px solid violet;
+      position: relative;
+      height: 100vh;
+      background-color: whitesmoke;
+      /* position: sticky; */
+    }
+    img {
+      margin: 1rem;
+    }
+
+    .zoro {
+    }
+    .luffy {
+      /* position: absolute; */
+      top: 100px;
+    }
+
+    .container_2 {
+        background-color: pink;
+        height: 100vh;
+    }
+    .sanji {
+        position: sticky;
+        top: 10px;
+    }
+    .brook {
+        position: fixed;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- <img
+        src="./images/zoro.png"
+        width="200px"
+        height="250px"
+        alt="zoro"
+        class="zoro"
+      /> -->
+      <!-- <img
+        src="./images/luffy.webp"
+        width="200px"
+        height="250px"
+        alt="zoro"
+        class="luffy"
+      /> -->
+      <img
+        src="./images/sanji.webp"
+        width="200px"
+        height="250px"
+        alt="zoro"
+        class="sanji"
+      />
+      <img
+        src="./images/brook.jpeg"
+        width="200px"
+        height="250px"
+        alt="zoro"
+        class="brook"
+      />
+    </div>
+
+    <div class="container_2">
+
+    </div>
+  </body>
+</html>

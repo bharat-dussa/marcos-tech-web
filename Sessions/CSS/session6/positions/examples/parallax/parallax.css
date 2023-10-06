@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* Parallax effect for different sections */
+.parallax-1 {
+    background-image: url('./images/demon_slayer.jpg');
+}
+
+.parallax-2 {
+    background-image: url('background2.jpg');
+}
+
+/* Add more parallax sections as needed */

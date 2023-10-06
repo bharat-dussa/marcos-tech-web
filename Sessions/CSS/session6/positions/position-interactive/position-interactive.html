@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Toggle</title>
+    <link rel="stylesheet" href="./position-interactive.css" />
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+    <div class="container">
+      <p id="position">Static</p>
+      <!-- Buttons for position -->
+      <button class="positionButton" data-position="relative">Relative</button>
+      <button class="positionButton" data-position="absolute">Absolute</button>
+      <button class="positionButton" data-position="fixed">Fixed</button>
+      <button class="positionButton" data-position="sticky">Sticky</button>
+      <button id="resetButton">Reset</button>
+
+      <label for="positionSlider">Adjust Position:</label>
+      <label for="topSlider">Top:</label>
+      <input type="range" id="topSlider" min="0" max="100" value="0" />
+
+      <label for="bottomSlider">Bottom:</label>
+      <input type="range" id="bottomSlider" min="0" max="100" value="0" />
+
+      <label for="leftSlider">Left:</label>
+      <input type="range" id="leftSlider" min="0" max="100" value="0" />
+
+      <label for="rightSlider">Right:</label>
+      <input type="range" id="rightSlider" min="0" max="100" value="0" />
+    </div>
+
+    <script src="./position-interactive.js"></script>
+  </body>
+</html>

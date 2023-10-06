@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+/* *{
+    background-color: black;
+} */
+
+body {
+    background-color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+.pink {
+    color: pink; /* changing color to pink */
+    font-size: 40px;
+    font-weight: 20;
+    font-family: 'Lato', sans-serif;
+    background-color: green;
+}
+
+.blue {
+    color: blue;
+}
+.grey{ 
+    color: grey;
+}
+
+.brown {
+    color: brown;
+}
+
+/* #pink {
+    color: blue;
+} */

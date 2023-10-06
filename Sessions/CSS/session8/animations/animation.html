@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+  </head>
+  <style>
+    .parent {
+      background-color: purple;
+      height: 50vh;
+      width: 400px;
+    }
+    .child {
+      background-color: yellow;
+      height: 3rem;
+      width: 35%;
+      transition: transform 2s ease-in-out;
+      transform: translateX(100%);
+    }
+
+    .parent:hover .child {
+      background-color: white;
+      border-radius: 0.3rem;
+    }
+
+    /* 2 */
+    .parent1 {
+      background-color: blueviolet;
+      width: 400px;
+    }
+
+    .child1 {
+      background-color: yellow;
+      height: 3rem;
+      width: 35%;
+    }
+
+    .parent1:hover .child1 {
+      background-color: white;
+      border-radius: 0.3rem;
+      animation: left-to-right 3s ease-in forwards infinite;
+    }
+
+    @keyframes left-to-right {
+      0% {
+        transform: translateX(0);
+      }
+
+      33.33% {
+        transform: translateY(100%);
+        background-color: red;
+      }
+      66% {
+        transform: translateY(20%) translate3d(20%);
+        background-color: green;
+      }
+      100% {
+        transform: translateX(100%);
+        background-color: violet;
+      }
+    }
+  </style>
+
+  <body>
+    <h1>Animations Intro</h1>
+    <div style="display: flex; gap: 20px">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+
+      <div class="parent1">
+        <div class="child1"></div>
+      </div>
+    </div>
+  </body>
+</html>

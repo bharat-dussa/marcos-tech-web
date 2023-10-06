@@ -1,0 +1,86 @@
+<!-- 
+    Pseudo-classes in CSS are used to define the special state of an HTML element 
+    that cannot be targeted using simple selectors alone.They allow you to apply styles to elements based on user interactions 
+    or specific conditions without the need for adding extra classes or IDs to your HTML markup. 
+
+    * Pseudo-classes start with a colon `:`
+
+    :hover
+    :active 
+    :focus
+    :first-child
+    :last-child
+    :nth-child
+    :not(selector)
+    :nth-of-type(n)
+    :checked
+    :disabled
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Classes Examples</title>
+    <link href="./pseudo-classes.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Pseudo-Classes Examples</h1>
+
+    <!-- :hover -->
+    <p><a href="#">Hover over me</a> to see the color change.</p>
+
+    <!-- :active -->
+    <button>Click me</button> to see the background color change when active.
+
+    <!-- :focus -->
+    <input
+      type="text"
+      placeholder="Click here and focus to change border color"
+    />
+
+    <!-- :first-child -->
+    <ul>
+      <li>This is the first child</li>
+      <li>Second child</li>
+      <li>Third child</li>
+    </ul>
+
+    <!-- :last-child -->
+    <ul>
+      <li>First child</li>
+      <li>Second child</li>
+      <li>This is the last child</li>
+    </ul>
+
+    <!-- :nth-child -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <!-- :not(selector) -->
+    <p class="special">This is a special paragraph.</p>
+    <p>This is a regular paragraph without special class.</p>
+
+    <!-- :nth-of-type -->
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <div>Div 4</div>
+    <div>Div 5</div>
+    <div>Div 6</div>
+
+    <!-- :checked -->
+    <label for="checkbox">Check this: </label>
+    <input type="checkbox" class="checkbox" id="checkbox" checked="checked"/>
+
+    <!-- :disabled -->
+    <input type="text" placeholder="This input is disabled" disabled />
+  </body>
+</html>

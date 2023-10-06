@@ -1,0 +1,72 @@
+<!-- 
+
+The display property in CSS is used to control how an HTML element should be displayed. 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property Examples</title>
+    <style>
+      .block-element {
+        /* 
+            This value makes the element a block-level element, 
+            which means it takes up the full width available and starts on a new line.
+        */
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: lightblue;
+      }
+      .inline-element {
+        /* 
+            This value makes the element an inline-level element, 
+            which means it flows within the content and only takes up as much width as necessary.
+        */
+        display: inline;
+        background-color: lightgreen;
+      }
+      .inline-block-element {
+        /* 
+        This combines the characteristics of both block and inline. 
+        It allows the element to have a defined width and height while still flowing inline.
+        */
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        background-color: lightcoral;
+      }
+      .hidden-element {
+        /* This value hides the element completely, making it invisible and taking up no space. */
+        display: none;
+      }
+      .flex-container {
+        /* This value creates a flex container, allowing you to use flex properties for its children. */
+        display: flex;
+      }
+      .grid-container {
+        /* This value creates a grid container, allowing you to use grid properties for its children. */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="toggleBlockElement()">Toggle Block Element</button>
+    <button onclick="toggleInlineElement()">Toggle Inline Element</button>
+    <button onclick="toggleInlineBlockElement()">
+      Toggle Inline-Block Element
+    </button>
+    <button onclick="toggleHiddenElement()">Toggle Hidden Element</button>
+
+    <div class="block-element">Block Element</div>
+    <span class="inline-element">Inline Element</span>
+    <div class="inline-block-element">Inline-Block Element</div>
+    <div class="hidden-element">Hidden Element</div>
+
+    <script src="./display-script.js"></script>
+  </body>
+</html>

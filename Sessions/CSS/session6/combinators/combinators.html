@@ -1,0 +1,53 @@
+<!--  
+
+    Combinators are CSS selectors that define relationships between HTML elements. 
+    They allow you to target elements based on their relationship to other elements
+
+    1. Descendant Selector (Whitespace)
+        /* Select all <a> elements inside a <div> */
+            div a {
+                color: blue;
+            }
+
+    2. Child Selector (>)
+        /* Select all <li> elements that are direct children of <ul> */
+        ul > li {
+            list-style-type: square;
+        }
+
+    3. Adjacent Sibling Selector (+)
+        /* Select the <p> element that is immediately preceded by an <h2> element */
+        h2 + p {
+            font-weight: bold;
+        }
+
+     4.General Sibling Selector (~)
+        /* Select the <p> element that is immediately preceded by an <h2> element */
+        h2 ~ p {
+            font-style: italic;
+        }
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <link href="./combinators.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <p>Paragraph 1</p>
+
+      <h2>Title</h2>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+    </div>
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+    </ul>
+  </body>
+</html>

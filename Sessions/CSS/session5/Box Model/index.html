@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model Example</title>
+    <link href="./style.css" rel="stylesheet" />
+    <style>
+      /* Apply styles to the container */
+      .box-container {
+        width: 300px;
+        margin: 20px auto; /* Center the box horizontally */
+        padding: 20px;
+        border: 5px solid #007bff;
+        background-color: #efefef;
+      }
+
+      /* Apply styles to the content */
+      .box-content {
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .padding {
+        padding: 70px;
+        border: 1px solid #4caf50;
+      }
+      .margins {
+        margin: 70px;
+      }
+
+      .margin_outer {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="" />
+
+    <p style="width: 260px">Tirumalesh</p>
+
+    <p style="border: 4px solid red; padding: 10px 0px 10px 20px">Aman</p>
+
+    <div style="margin: 100px 0px 100px 0px;">
+        
+      <div style="display: inline; border: 1px solid red; padding: 2px">
+        margin
+        <div
+          style="display: inline; margin-right: 10px; border: 1px solid blue; border-radius: 4px;"
+        >
+          AMan
+        </div>
+        <div
+          style="
+            display: inline;
+            margin-left: 10px;
+            border: 1px solid blueviolet;
+            text-align: center;
+            width: 100%;"
+        >
+          AMan1
+        </div>
+      </div>
+
+     
+    </div>
+
+
+    <div style="border: 1px groove red; border-radius: 2px; border-color: #007bff;">
+        Hello
+    </div> 
+
+
+    <div>
+        <p style="background-color: #007bff;">Omprakash</p>
+        <p style="background-color: blue;">Anjali</p>
+        <p style="background-color: pink;">Vamshi</p>
+        <p style="background-color: red; z-index: 10px;">Aman</p>
+    </div>
+
+
+    <!-- Create a box container -->
+    <div class="box-container">
+      <!-- CSS Padding -->
+
+      <div style="background-color: red">
+        <h2>CSS Padding</h2>
+        <div class="padding">This element has a padding of 70px.</div>
+        <div class="margin_outer">
+          <div class="margins">This element has a margin of 70px.</div>
+        </div>
+      </div>
+
+      <!-- Content inside the box -->
+      <div class="box-content">
+        <h1>Box Model Example</h1>
+        <p>This is a simple example of the CSS Box Model.</p>
+      </div>
+    </div>
+  </body>
+</html>
