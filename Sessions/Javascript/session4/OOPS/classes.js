@@ -17,7 +17,6 @@ class AcRemote {
     this.plus = plus;
     this.minus = minus;
     this.isOn = false;
-    
   }
 
   increaseTemp() {
@@ -42,3 +41,13 @@ class AcRemote {
 
 
 }
+
+const remote = new AcRemote(1,1);
+
+remote.switchAcOnOff(true);
+console.log("increase",remote.increaseTemp())
+remote.switchAcOnOff(false);
+console.log("increase",remote.increaseTemp())
+
+
+

@@ -30,6 +30,15 @@ class RemoteControl {
     this.ac = ac; // The remote control is associated with a specific AC
   }
 
+  this = {
+    ac: {
+      temperature:" ",
+      isTurnedOn: '',
+      displayStatus: '',
+      setTemperature: ()
+    }
+  }
+
   increaseTemperature() {
     this.ac.setTemperature(this.ac.temperature + 1);
   }

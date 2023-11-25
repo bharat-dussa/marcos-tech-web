@@ -1,8 +1,6 @@
 const user = {
-  name: "bharat",
-  getMe: function (){
-    console.log(`My name is ${this.name}`)
-  },
+  name : "test",
+  age: 1
 }
-
-user.getMe();
+user.surname  = "test1"
+console.log('user:', user);

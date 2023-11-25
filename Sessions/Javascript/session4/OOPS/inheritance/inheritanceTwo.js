@@ -6,7 +6,7 @@ class Grandfather {
     }
   
     gappeLadane() {
-      console.log(`${this.name} gappe karega`);
+      console.log(`${this.name} gappe lada raha hai`);
     }
   }
   
@@ -15,8 +15,15 @@ class Grandfather {
     constructor(name, age, job) {
       super(name, age); // Call the constructor of the superclass
       this.job = job;
+
+      // this.name = name;
+      // this.age = age;
     }
   
+    // gappeLadane() {
+    //   console.log(`${this.name} gappe lada raha hai`);
+    // }
+
     goWork() {
       console.log(`${this.name} goes to work as a ${this.job}.`);
     }
@@ -35,15 +42,15 @@ class Grandfather {
   }
   
   // Create instances of the classes
-  const grandpa = new Grandfather('Grandpa', 80);
-  const father = new Father('Dad', 50, 'Doctor');
-  const son = new Son('Junior', 20, 'University');
+  const grandpa = new Grandfather('Balram', 80);
+  const father = new Father('Vamshi', 50, 'Doctor');
+  const son = new Son('Laxmi', 20, 'University');
   
   // Use the instances
-  grandpa.tellStory();
-  father.tellStory();
-  father.goWork();
-  son.tellStory();
-  son.goWork();
-  son.goToSchool();
+  // grandpa.gappeLadane();
+  father.gappeLadane();
+  // father.goWork();
+  son.gappeLadane();
+  // son.goWork();
+  // son.goToSchool();
   
