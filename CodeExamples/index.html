@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>CSS - Blinking text </title>
+    <style>
+        #blink_effect {
+            color: orange;
+            font-size: 20 px;
+            transition: 1.5s;
+        }     
+    </style>
+</head>
+<body>
+    <h1>Javascript- flashing the text</h>
+        <p id="blink_effect"> hi, I am showing you an effect on this text.</p>
+        <script>
+            let blinking_text = document.getElementById('blink_effect');
+            setInterval(function() {
+                blinking_text.style.display = (blinking_text.style.display == 'none' ? '' : 'none');
+            }, 600);
+        </script>
+</body>
+</html>

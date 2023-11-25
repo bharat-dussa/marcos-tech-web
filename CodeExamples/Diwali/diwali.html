@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diya Animation</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="diwali.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="shadow"></div>
+      <div class="diya">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="inside">
+        <div class="light"></div>
+        <div class="flame"></div>
+      </div>
+    </div>
+    <div class="video-text-container">
+      <video autoplay loop muted>
+        <source src="../videoplayback.mp4" type="video/mp4" />
+      </video>
+
+      <div class="blink">
+        <span>JAI SHREE RAM</span>
+      </div>
+
+      <div class="text-container">
+        <h2>Shubh Deepawali</h2>
+      </div>
+    </div>
+
+    <script>
+      const container = document.querySelector(".body");
+      const fireworks = new Fireworks.default(container);
+      fireworks.start();
+    </script>
+  </body>
+</html>
