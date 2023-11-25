@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Notes</title>
+    <link href="./notes.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="tools_container">
+        <div>
+            <select id="format">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+            </select>
+            <button class="button"  id="downloadButton">Download</button>
+        </div>
+    <button class="button" id="brushButton">Brush</button>
+    <button class="button"  id="eraserButton">Eraser</button>
+    </div>
+    <canvas id="canvas" width="800" height="500" style="border:1px solid #000;"></canvas>
+   
+    
+
+    <script src="./notes.js"></script>
+</body>
+</html>
